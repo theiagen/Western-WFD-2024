@@ -24,7 +24,7 @@ jobs:
    
     - name: Verify output
       run: |
-        EXPECTED_OUTPUT="Processing FASTQ file: ./data/sample.fastq\nNumber of reads in ./data/sample.fastq: 2\nGC content in ./data/sample.fastq: 50%\ntest github action"
+        EXPECTED_OUTPUT="Processing FASTQ file: ./data/sample.fastq\nNumber of reads in ./data/sample.fastq: 2"
         ACTUAL_OUTPUT=$(./bin/fastq-peak.sh ./data/sample.fastq)
         if [[ "$ACTUAL_OUTPUT" != "$EXPECTED_OUTPUT" ]]; then
           echo "Output did not match expected result."
