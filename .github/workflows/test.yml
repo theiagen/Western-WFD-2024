@@ -22,20 +22,25 @@ jobs:  # Define jobs for the workflow
       id: run_script  # ID for referencing this step
       run: ./bin/fastq-peak.sh ./data/sample.fastq  # Command to run the script with the sample FASTQ file
 
-    - name: Verify output  # Step to verify the script output
-      run: |  # Run command to verify output
-        # Capture the actual output of the script
-        ACTUAL_OUTPUT=$(./bin/fastq-peak.sh ./data/sample.fastq)
+    - name: Verify output
+      run: |
+        # Save the expected output to a file
+        echo "Processing FASTQ file: ./data/sample.fastq" > expected_output.txt
+        echo "Number of reads in ./data/sample.fastq: 2" >> expected_output.txt
 
-        # Print the actual output for debugging
+        # Capture the actual output of the script and save it to a file
+        ./bin/fastq-peak.sh ./data/sample.fastq > actual_output.txt
+
+        # Print expected and actual outputs for debugging
+        echo "Expected Output:"
+        cat expected_output.txt
         echo "Actual Output:"
-        echo "$ACTUAL_OUTPUT"
+        cat actual_output.txt
 
-        # Check if the actual output contains the expected string
-        if echo "$ACTUAL_OUTPUT" | grep -q "Number of reads in ./data/sample.fastq: 2"; then
-          echo "Output contains the expected result."
-        else
-          echo "Output did not contain the expected result."
-          exit 1  # Exit with an error code if the expected string is not found
-        fi  # Close the if statement block
-      shell: bash  # Specify the shell to use for running the commands
+        # Compare actual output with expected output
+        if ! diff -q expected_output.txt actual_output.txt; then
+          echo "Output did not match expected result."
+          diff expected_output.txt actual_output.txt
+          exit 1
+        fi
+      shell: bash
