@@ -12,12 +12,17 @@
     - Click the push icon in the bottom-left corner of your VSCode interface to publish this branch to the remote repository.
     - {IMAGE}
 3. From your newly created dev branch, use the VSCode interface to stage the changes you made to `fastq-peak.sh` which add the gc-percentage calculation and reporting.
-  - {IMAGE}
+    - {IMAGE}
 4. Commit these changes with a comment, e.g. `adding gc-percentage calculation and reporting`.
-  - {IMAGE} 
+    - {IMAGE} 
 5. Use the Sync Changes button that appears to publish this branch to the remote repository.
-  - {IMAGE}
+    - {IMAGE}
 
-## Issuing a Pull Request
+## Openning a Pull Request
 1. Navigate to the remote repository on GitHub and select your dev branch
-  - {IMAGE}
+    - {IMAGE}
+2. Use the "Contribute" dropdown menu to open a pull request
+    - {IMAGE}
+3. Complete the PR form for this repository and create the pull request
+    - {IMAGE}
+    - **Note:** Check-list items can be selected by adding an `X` between the brackets in markdown, e.g. `[X]`, or after the PR is created using the web interface.
