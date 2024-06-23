@@ -24,9 +24,13 @@ jobs:  # Define jobs for the workflow
 
     - name: Verify output  # Step to verify the script output
       run: |  # Run command to verify output
-        # Define the expected output as a multiline string
-        EXPECTED_OUTPUT="Processing FASTQ file: ./data/sample.fastq\nNumber of reads in ./data/sample.fastq: 2"
-
+        # Define the expected output as a multiline string using YAML's block scalar
+        EXPECTED_OUTPUT=$(cat <<EOF
+Processing FASTQ file: ./data/sample.fastq
+Number of reads in ./data/sample.fastq: 2
+EOF
+        )
+        
         # Capture the actual output of the script
         ACTUAL_OUTPUT=$(./bin/fastq-peak.sh ./data/sample.fastq)
 
