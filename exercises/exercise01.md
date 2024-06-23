@@ -1,6 +1,6 @@
 # Exercise 1: Design Doc, Dev Environment, and Scripting with VSCode
 
-1. Assess our Design Doc to gain an thorough understanding of our project's **Problem Statement**, **Objectives**, **Proposed Solution**, and **Implementation Plan**.
+1. Assess our [Design Doc](https://github.com/theiagen/Western-WFD-2024/blob/main/exercises/design-doc.md) to gain an thorough understanding of our project's **Problem Statement**, **Objectives**, **Proposed Solution**, and **Implementation Plan**.
 
 2. Use GitPod to create a dev environment:
     -    Navigate to https://gitpod.io/
