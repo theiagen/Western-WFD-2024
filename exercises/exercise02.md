@@ -23,17 +23,17 @@
 
 3. From your newly created dev branch, use the VSCode interface to stage the changes you made to `fastq-peak.sh` which add the gc-percentage calculation and reporting.
 <p align="center">
-  <img src="../images/e2-2c.png" width="800" class="center">
+  <img src="../images/e2-2c.png" width=500" class="center">
 </p>
 
 4. Commit these changes with a comment, e.g. `adding gc-percentage calculation and reporting`.
 <p align="center">
-  <img src="../images/e2-2d.png" width="800" class="center">
+  <img src="../images/e2-2d.png" width="500" class="center">
 </p>
 
 5. Use the Sync Changes button that appears to publish this branch to the remote repository.
 <p align="center">
-  <img src="../images/e2-2e.png" width="800" class="center">
+  <img src="../images/e2-2e.png" width="500" class="center">
 </p>
 
 ## Openning a Pull Request
@@ -52,4 +52,4 @@
   <img src="../images/e2b-3.png" width="800" class="center">
 </p>
 
-    - **Note:** Check-list items can be selected by adding an `X` between the brackets in markdown, e.g. `[X]`, or after the PR is created using the web interface.
+**Note:** Check-list items can be selected by adding an `X` between the brackets in markdown, e.g. `[X]`, or after the PR is created using the web interface.
