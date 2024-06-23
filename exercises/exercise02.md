@@ -7,7 +7,7 @@
        - Select the three verticle dots on the right-hand side of your workspace and select "Open"
 
 <p align="center">
-  <img src="../images/e2-1.png" width="800" class="center">
+  <img src="../images/e2-1.png" width="1000" class="center">
 </p>
 
 2. Currently, you should be working within the main branch of this repo, but this is a protected branch to which we cannot commit direcly. Instead, a dev branch must be created and PR issued to push changes to main. To do this:
