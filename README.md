@@ -42,7 +42,7 @@ In addition to lectures, this course costs of serveral hands-on exercises to rei
   - Navigate to https://gitpod.io/
   - Select "Continue with GitHub", authorize Gitpod to access your GitHub account, and sign in with your credentials
   - Start New Workspace
-  - Set the "Context URL": https://github.com/theiagen/Western-WFD-2024/
+  - Set the repository to https://github.com/theiagen/Western-WFD-2024/
   - Select the default Editor and default Class, click "Continue"
 
 <p align="center">
