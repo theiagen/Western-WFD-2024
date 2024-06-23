@@ -11,7 +11,7 @@ To calculate GC content, we will:
 2. Count the total number of nucleotides within the input fastq file (`TOTAL_BASE_COUNT`)
 3. Calcuate GC content as a percentage: `(GC Count / Total Base Count) *100` (`GC_PERCENT`)
 
-To report the GC content, we will print the `GC_Perecent` value to `stdout`, i.e. `GC content in {input__fastq_file}: {GC_PERCENT}%`
+To report the GC content, we will print the `GC_Perecent` value to `stdout`, i.e. `"GC content in {input__fastq_file}: {GC_PERCENT}%"`
 
 ## Implementation Plan
 1. Create a dev environment to ensure development does not interfere with production software
