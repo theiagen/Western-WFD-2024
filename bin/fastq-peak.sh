@@ -19,9 +19,10 @@ fi
 
 echo "Processing FASTQ file: $FASTQ_FILE"
 
-# Count the number of lines in the FASTQ file
+# Count number of reads in FASTQ file
+## Count the number of lines in the FASTQ file
 LINE_COUNT=$(wc -l < "$FASTQ_FILE")
-
-# Calculate the number of reads (4 lines per read)
+## Calculate the number of reads (4 lines per read)
 READ_COUNT=$((LINE_COUNT / 4))
+
 echo "Number of reads in $FASTQ_FILE: $READ_COUNT"
