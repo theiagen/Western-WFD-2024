@@ -8,10 +8,24 @@
     - Start New Workspace
     - Set the "Context URL": https://github.com/theiagen/Western-WFD-2024/
     - Select the default Editor and default Class, click "Continue"
+  
+
+<p align="center">
+  <img src="../images/e1-1.png" width="800" class="center">
+</p>
 
 3. Familiarize yourself with the VSCode environment
 
-4. Test our the [fastq-peak.sh](https://github.com/theiagen/Western-WFD-2024/blob/main/bin/fastq-peak.sh)` software using the [benchmark read data](https://github.com/theiagen/Western-WFD-2024/blob/main/data/sample.fastq)
+<p align="center">
+  <img src="../images/e1-3.png" width="800" class="center">
+</p>
+
+4. Assess the [fastq-peak.sh](https://github.com/theiagen/Western-WFD-2024/blob/main/bin/fastq-peak.sh)` software and test it using the [benchmark read data](https://github.com/theiagen/Western-WFD-2024/blob/main/data/sample.fastq)
+
+<p align="center">
+  <img src="../images/e1-4.png" width="800" class="center">
+</p>
+
 
 5. Begin modiffying [fastq-peak.sh](https://github.com/theiagen/Western-WFD-2024/blob/main/bin/fastq-peak.sh) to calculate `GC_COUNT`, `TOTAL_BASE_COUNT`, & `GC_PERCENT`; report `GC_PERCENT` to `stdout`
     - Test your solutions using the [benchmark read data](https://github.com/theiagen/Western-WFD-2024/blob/main/data/sample.fastq)
