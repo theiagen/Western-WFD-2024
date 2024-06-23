@@ -1,5 +1,5 @@
 # Exercise 2: Version Control with Git
-
+## Creating a dev branch and stagging/committing changes
 1. Access your dev environment through GitPod:
     -    Navigate to https://gitpod.io/
     - Select "Continue with GitHub", authorize Gitpod to access your GitHub account, and sign in with your credentials
@@ -13,9 +13,11 @@
     - {IMAGE}
 3. From your newly created dev branch, use the VSCode interface to stage the changes you made to `fastq-peak.sh` which add the gc-percentage calculation and reporting.
   - {IMAGE}
-5. Commit these changes with a comment, e.g. `adding gc-percentage calculation and reporting`.
+4. Commit these changes with a comment, e.g. `adding gc-percentage calculation and reporting`.
   - {IMAGE} 
-6. Use the Sync Changes button that appears to publish this branch to the remote repository.
+5. Use the Sync Changes button that appears to publish this branch to the remote repository.
   - {IMAGE}
-6. Navigate to the remote repository on GitHub and select your dev branch
+
+## Issuing a Pull Request
+1. Navigate to the remote repository on GitHub and select your dev branch
   - {IMAGE}
