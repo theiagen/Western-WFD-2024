@@ -4,10 +4,16 @@
 
 ----
 
-
 # Software Development Practices for Public Health Bioinformatics
 Western Region WFD Offering Provided by the Washington State Department of Health in Collaboration with Theiagen Genomics
 
+## Content
+- [Overview](#overview) 
+  - [Training Objectives](#training-objectives)
+  - [Target Audience](#target-audience)
+  - [Course Format](#course-format)
+- [Prerequisites for Hands-On Exercises](#prerequisites-for-hands-on-exercises)
+- [Course Content](#course-content)
 ## Overview 
 The Washington State Department of Health, in collaboration with Theiagen Genomics, will be hosting an Advanced Bioinformatics Training Workshop throughout July in their role as WFD lead in the Western Region. This will be a virtual workshop hosted on Mondays and Wednesdays via Zoom from **July 8th - 31st, 2024**.
 
@@ -17,7 +23,7 @@ The Washington State Department of Health, in collaboration with Theiagen Genomi
 - Learn to apply testing and deployment strategies to ensure code quality and stability
 - Explore advanced tools and APIs for data management and workflow automation
 
-## Target Audience
+### Target Audience
 This course is designed for bioinformatics scientists interested in strengthening their skill sets as pipeline developers. We aim to cover a comprehensive range of topics, from foundational concepts to advanced techniques, ensuring you gain the knowledge and tools needed to excel in your field. 
 
 Participants should have a strong background in bioinformatics, specifically accessing open-source tools through a command-line interface, running bioinformatics pipelines, and proficiency in at least one scripting language (e.g. Python, Pearl, or BASH).  Participants should also have a GitHub account (or an ability to create one) as well as access to a Linux environment within their host institution.
@@ -41,3 +47,6 @@ In addition to lectures, this course costs of serveral hands-on exercises to rei
 - 🚨**NOTE**🚨 Once you're finished working, make sure to shut down your workspace to save your allotted free hours (50hr/month) in GitPod. There are a few ways to stop your workspace from running:
   - In GitPod environment (VSCode interface), click on the orange Gidpod in bottom left corner. Select "Stop Workspace"
   - Navigate to https://gitpod.io/, find your workspace in the list, click on the three-dot button, and select "Stop"
+
+
+## Course Content
