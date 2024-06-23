@@ -22,8 +22,8 @@ jobs:  # Define jobs for the workflow
       id: run_script  # ID for referencing this step
       run: ./bin/fastq-peak.sh ./data/sample.fastq  # Command to run the script with the sample FASTQ file
 
-    - name: Verify output  # Step to verify the script output
-      run: |  # Run command to verify output
+    - name: Verify output
+      run: |
         # Define the expected output as a multiline string using here-document
         EXPECTED_OUTPUT=$(cat <<'EOF'
 Processing FASTQ file: ./data/sample.fastq
@@ -45,6 +45,6 @@ EOF
           echo "Output did not match expected result."
           echo "Expected: $EXPECTED_OUTPUT"
           echo "Got: $ACTUAL_OUTPUT"
-          exit 1  # Exit with an error code if the outputs do not match
-        fi  # Close the if statement block
-      shell: bash  # Specify the shell to use for running the commands
+          exit 1
+        fi
+      shell: bash
