@@ -43,5 +43,5 @@ Number of reads in ./data/sample.fastq: 2"
           echo "Expected: $EXPECTED_OUTPUT"
           echo "Got: $ACTUAL_OUTPUT"
           exit 1  # Exit with an error code if the outputs do not match
-        fi
+        fi  # Close the if statement block
       shell: bash  # Specify the shell to use for running the commands
