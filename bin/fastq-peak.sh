@@ -35,4 +35,4 @@ TOTAL_BASE_COUNT=$(grep -E '^[ATCGN]+$' "$FASTQ_FILE" | tr -cd 'ATCGatcg' | wc -
 ## Calculate the GC content as a percentage
 GC_CONTENT=$(awk "BEGIN {print ($GC_COUNT / $TOTAL_BASE_COUNT) * 100}")
 
-#echo "GC content in $FASTQ_FILE: $GC_CONTENT%"
+echo "GC content in $FASTQ_FILE: $GC_CONTENT%"
