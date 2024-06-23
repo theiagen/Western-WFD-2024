@@ -29,9 +29,11 @@ This course is designed for bioinformatics scientists interested in strengthenin
 Participants should have a strong background in bioinformatics, specifically accessing open-source tools through a command-line interface, running bioinformatics pipelines, and proficiency in at least one scripting language (e.g. Python, Pearl, or BASH).  Participants should also have a GitHub account (or an ability to create one) as well as access to a Linux environment within their host institution.
 
 ### Course Format 
-This will be a 4-week training series occurring on Mondays and Wednesdays from July 8th - 31st, 2024 (exact times TBD): 
+This will be a 4-week training series occurring on Mondays and Wednesdays from July 8th - 31st, 2024: 
 - Mondays (90 min): Lecture material with hands-on exercises
 - Wednesdays (60 min): "Office hours" style meeting where participants can ask any questions about the material, and the trainers will address any errors encountered by participants.
+
+All lecture content will be recorded and made available through this GitHub repository to facilitate self-paced and asynchronous learning
 
 ## Prerequisites for Hands-On Exercises
 In addition to lectures, this course costs of serveral hands-on exercises to reinforce the coursework material. To participate in these exercises, trainees will need the following resources: 
