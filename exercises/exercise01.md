@@ -11,7 +11,7 @@
   
 
 <p align="center">
-  <img src="../images/e1-1.png" width="800" class="center">
+  <img src="../images/e1-1.png" width="600" class="center">
 </p>
 
 3. Familiarize yourself with the VSCode environment
@@ -38,6 +38,9 @@
     - In GitPod environment (VSCode interface), click on the orange Gidpod in bottom left corner. Select "Stop Workspace"
     - Navigate to https://gitpod.io/, find your workspace in the list, click on the three-dot button, and select "Stop"
 
+<p align="center">
+  <img src="../images/stop-workspace.png" width="600" class="center">
+</p>
 
 <details>
  <summary> Exercise 1 Solution
