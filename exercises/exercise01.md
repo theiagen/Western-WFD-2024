@@ -22,3 +22,12 @@
 8. Once you're finished working, make sure to shut down your workspace to save your allotted free hours (50hr/month) in GitPod. There are a few ways to stop your workspace from running:
     - In GitPod environment (VSCode interface), click on the orange Gidpod in bottom left corner. Select "Stop Workspace"
     - Navigate to https://gitpod.io/, find your workspace in the list, click on the three-dot button, and select "Stop"
+
+
+<details>
+ <summary> Exercise 1 Solution
+ </summary><br />   
+
+A modified fastq-peak.sh code with gc-count calculation and reporting can be found in the [back of the book](https://github.com/theiagen/Western-WFD-2024/blob/main/back-of-the-book/fastq-peak%2Bgc.sh).
+
+</details>
