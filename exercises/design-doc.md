@@ -1,10 +1,10 @@
 # Design Document
 ## Problem Statement
-Our colleagues are routinely utilizing the [fastq-peak.sh]([../bin/fastq-peak.sh](https://github.com/theiagen/Western-WFD-2024/blob/main/bin/fastq-peak.sh)) software to assess NGS data generated in the laboatory. The outputs, however, do not capture GC-content which is necessary for more robust quality assessment of specimens. 
+Our colleagues are routinely utilizing the [fastq-peak.sh](https://github.com/theiagen/Western-WFD-2024/blob/main/bin/fastq-peak.sh) software to assess NGS data generated in the laboatory. The outputs, however, do not capture GC-content which is necessary for more robust quality assessment of specimens. 
 ## Objectives
 Provide a solution to calculate and report GC content for our collegues.
 ## Proposed Solution
-Update the fastq-peak.sh software to calculate and report GC content. 
+Update the [fastq-peak.sh](https://github.com/theiagen/Western-WFD-2024/blob/main/bin/fastq-peak.sh) software to calculate and report GC content. 
 
 To calculate GC content, we will:
 1. Count the number of G and C nucleotides within the input fastq file (`GC_COUNT`)
@@ -14,7 +14,7 @@ To calculate GC content, we will:
 To report the GC content, we will print the `GC_Perecent` value to `stdout`, i.e. `"GC content in {input__fastq_file}: {GC_PERCENT}%"`
 
 ## Implementation Plan
-1. Create a dev environment to ensure development does not interfere with production software
+1. Create a dev environment and a Git branch to ensure development does not interfere with production software 
 2. Add bash one-liners to [fastq-peak.sh](../bin/fastq-peak.sh) to calculate:
     - `GC_Count`, `TOTAL_BASE_COUNT`, & `GC_PERCENT`
 3. Print the calculated `GC_PERCENT` value to stdout.
