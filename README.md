@@ -42,12 +42,26 @@ In addition to lectures, this course costs of serveral hands-on exercises to rei
   - Navigate to https://gitpod.io/
   - Select "Continue with GitHub", authorize Gitpod to access your GitHub account, and sign in with your credentials
   - Start New Workspace
-  - Set the "Context URL": https://github.com/theiagen/Western-WFD-2024/
+  - Set the repository to https://github.com/theiagen/Western-WFD-2024/
   - Select the default Editor and default Class, click "Continue"
+
+<p align="center">
+  <img src="./images/e1-1.png" width="600" class="center">
+</p>
+ 
+
 
 🚨**NOTE**🚨 Once you're finished working, make sure to shut down your workspace to save your allotted free hours (50hr/month) in GitPod. There are a few ways to stop your workspace from running:
 - In GitPod environment (VSCode interface), click on the orange Gidpod in bottom left corner. Select "Stop Workspace"
-- Navigate to https://gitpod.io/, find your workspace in the list, click on the three-dot button, and select "Stop"
+
+<p align="center">
+  <img src="./images/stop-workspace.png" width="600" class="center">
+</p>
+- Navigate to https://gitpod.io/, find your workspace in the list, click on the three-dot button, and select "Stop" 
+<p align="center">
+  <img src="./images/stop-workspace2.png" width="800" class="center">
+</p>
+
 
 
 ## Course Content
