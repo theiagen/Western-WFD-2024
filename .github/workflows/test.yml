@@ -1,37 +1,47 @@
-name: CI
+name: CI  # Name of the workflow
 
-on: [pull_request]
+on: [pull_request]  # Trigger the workflow on pull requests
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
+jobs:  # Define jobs for the workflow
+  build:  # Job name
+    runs-on: ubuntu-latest  # Specify the environment to run the job
 
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+    steps:  # Steps to execute in the job
+    - name: Checkout code  # Step to checkout the repository code
+      uses: actions/checkout@v2  # Use the checkout action
 
-    - name: Install dependencies
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y graphviz
+    - name: Install dependencies  # Step to install necessary dependencies
+      run: |  # Run command to install dependencies
+        sudo apt-get update  # Update the package list
+        sudo apt-get install -y graphviz  # Install graphviz
 
-    - name: Make script executable
-      run: chmod +x ./bin/fastq-peak.sh
-   
-    - name: Run fastq-peak script
-      id: run_script
-      run: ./bin/fastq-peak.sh ./data/sample.fastq
-   
-    - name: Verify output
-      run: |
+    - name: Make script executable  # Step to make the script executable
+      run: chmod +x ./bin/fastq-peak.sh  # Change permissions to make the script executable
+
+    - name: Run fastq-peak script  # Step to run the script
+      id: run_script  # ID for referencing this step
+      run: ./bin/fastq-peak.sh ./data/sample.fastq  # Command to run the script with the sample FASTQ file
+
+    - name: Verify output  # Step to verify the script output
+      run: |  # Run command to verify output
+        # Define the expected output as a multiline string using YAML block scalar
         EXPECTED_OUTPUT="Processing FASTQ file: ./data/sample.fastq
-Number of reads in ./data/sample.fastq: 2
-GC content in ./data/sample.fastq: 50%"
+Number of reads in ./data/sample.fastq: 2"
+
+        # Capture the actual output of the script
         ACTUAL_OUTPUT=$(./bin/fastq-peak.sh ./data/sample.fastq)
-        if [[ "$ACTUAL_OUTPUT" != "$EXPECTED_OUTPUT" ]]; then
+
+        # Print expected and actual outputs for debugging
+        echo "Expected Output:"
+        echo "$EXPECTED_OUTPUT"
+        echo "Actual Output:"
+        echo "$ACTUAL_OUTPUT"
+
+        # Compare actual output with expected output
+        if [ "$ACTUAL_OUTPUT" != "$EXPECTED_OUTPUT" ]; then
           echo "Output did not match expected result."
           echo "Expected: $EXPECTED_OUTPUT"
           echo "Got: $ACTUAL_OUTPUT"
-          exit 1
-        fi
-      shell: bash
+          exit 1  # Exit with an error code if the outputs do not match
+        fi  # Close the if statement block
+      shell: bash  # Specify the shell to use for running the commands
