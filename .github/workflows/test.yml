@@ -24,27 +24,23 @@ jobs:  # Define jobs for the workflow
 
     - name: Verify output
       run: |
-        # Define the expected output as a multiline string using here-document
-        EXPECTED_OUTPUT=$(cat <<'EOF'
-Processing FASTQ file: ./data/sample.fastq
-Number of reads in ./data/sample.fastq: 2
-EOF
-        )
+        # Save the expected output to a file
+        echo "Processing FASTQ file: ./data/sample.fastq" > expected_output.txt
+        echo "Number of reads in ./data/sample.fastq: 2" >> expected_output.txt
 
-        # Capture the actual output of the script
-        ACTUAL_OUTPUT=$(./bin/fastq-peak.sh ./data/sample.fastq)
+        # Capture the actual output of the script and save it to a file
+        ./bin/fastq-peak.sh ./data/sample.fastq > actual_output.txt
 
         # Print expected and actual outputs for debugging
         echo "Expected Output:"
-        echo "$EXPECTED_OUTPUT"
+        cat expected_output.txt
         echo "Actual Output:"
-        echo "$ACTUAL_OUTPUT"
+        cat actual_output.txt
 
         # Compare actual output with expected output
-        if [ "$ACTUAL_OUTPUT" != "$EXPECTED_OUTPUT" ]; then
+        if ! diff -q expected_output.txt actual_output.txt; then
           echo "Output did not match expected result."
-          echo "Expected: $EXPECTED_OUTPUT"
-          echo "Got: $ACTUAL_OUTPUT"
+          diff expected_output.txt actual_output.txt
           exit 1
         fi
       shell: bash
