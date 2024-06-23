@@ -24,9 +24,11 @@ jobs:  # Define jobs for the workflow
 
     - name: Verify output  # Step to verify the script output
       run: |  # Run command to verify output
-        # Define the expected output as a multiline string using YAML block scalar
-        EXPECTED_OUTPUT="Processing FASTQ file: ./data/sample.fastq
-Number of reads in ./data/sample.fastq: 2"
+        EXPECTED_OUTPUT=$(cat <<'EOF'
+Processing FASTQ file: ./data/sample.fastq
+Number of reads in ./data/sample.fastq: 2
+EOF
+        )
 
         # Capture the actual output of the script
         ACTUAL_OUTPUT=$(./bin/fastq-peak.sh ./data/sample.fastq)
@@ -39,9 +41,4 @@ Number of reads in ./data/sample.fastq: 2"
 
         # Compare actual output with expected output
         if [ "$ACTUAL_OUTPUT" != "$EXPECTED_OUTPUT" ]; then
-          echo "Output did not match expected result."
-          echo "Expected: $EXPECTED_OUTPUT"
-          echo "Got: $ACTUAL_OUTPUT"
-          exit 1  # Exit with an error code if the outputs do not match
-        fi  # Close the if statement block
-      shell: bash  # Specify the shell to use for running the commands
+          echo "Output did not match expec
