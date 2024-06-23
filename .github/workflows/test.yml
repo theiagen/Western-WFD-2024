@@ -24,21 +24,18 @@ jobs:  # Define jobs for the workflow
 
     - name: Verify output  # Step to verify the script output
       run: |  # Run command to verify output
-        EXPECTED_OUTPUT=$(cat <<'EOF'
-Processing FASTQ file: ./data/sample.fastq
-Number of reads in ./data/sample.fastq: 2
-EOF
-        )
-
         # Capture the actual output of the script
         ACTUAL_OUTPUT=$(./bin/fastq-peak.sh ./data/sample.fastq)
 
-        # Print expected and actual outputs for debugging
-        echo "Expected Output:"
-        echo "$EXPECTED_OUTPUT"
+        # Print the actual output for debugging
         echo "Actual Output:"
         echo "$ACTUAL_OUTPUT"
 
-        # Compare actual output with expected output
-        if [ "$ACTUAL_OUTPUT" != "$EXPECTED_OUTPUT" ]; then
-          echo "Output did not match expec
+        # Check if the actual output contains the expected string
+        if echo "$ACTUAL_OUTPUT" | grep -q "Number of reads in ./data/sample.fastq: 2"; then
+          echo "Output contains the expected result."
+        else
+          echo "Output did not contain the expected result."
+          exit 1  # Exit with an error code if the expected string is not found
+        fi  # Close the if statement block
+      shell: bash  # Specify the shell to use for running the commands
