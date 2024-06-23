@@ -16,6 +16,7 @@
 5. Begin modiffying [fastq-peak.sh](https://github.com/theiagen/Western-WFD-2024/blob/main/bin/fastq-peak.sh) to calculate `GC_COUNT`, `TOTAL_BASE_COUNT`, & `GC_PERCENT`; report `GC_PERCENT` to `stdout`
     - Test your solutions using the [benchmark read data](https://github.com/theiagen/Western-WFD-2024/blob/main/data/sample.fastq)
       - Calculated GC Content for this input fastq file should equal 50%
+    - Be sure to adhere to the [repository style guide](https://github.com/theiagen/Western-WFD-2024/blob/main/style-guide.md) when modifying [fastq-peak.sh](https://github.com/theiagen/Western-WFD-2024/blob/main/bin/fastq-peak.sh)
 
 7. Save your changes within your workspace
 
