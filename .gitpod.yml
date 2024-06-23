@@ -12,7 +12,6 @@ tasks:
       conda activate base
       git checkout master
       chmod +x ./bin/process_fastq.sh && echo "Gitpod environment setup complete."
-    command: ./bin/process_fastq.sh ./data/sample.fastq
 vscode:
   extensions: # based on nf-core.nf-core-extensionpack
     - codezombiech.gitignore                 # Language support for .gitignore files
