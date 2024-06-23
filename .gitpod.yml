@@ -10,7 +10,7 @@ tasks:
       pip install graphviz
       . /opt/conda/etc/profile.d/conda.sh
       conda activate base
-      git checkout master
+      git checkout main
       chmod +x ./bin/fastq-peak.sh && echo "Gitpod environment setup complete."
 vscode:
   extensions: # based on nf-core.nf-core-extensionpack
