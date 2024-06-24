@@ -1,19 +1,17 @@
-name: CI  # Name of the workflow
+name: fastq-peak functional test  # Name of the workflow
 
-on: [pull_request]  # Trigger the workflow on pull requests
+on:
+  pull_request:
+    branches:
+      - main  # Trigger the workflow on pull requests to the main branch
 
 jobs:  # Define jobs for the workflow
-  build:  # Job name
+  verify-fqp-output:  # Job name
     runs-on: ubuntu-latest  # Specify the environment to run the job
 
     steps:  # Steps to execute in the job
       - name: Checkout code  # Step to checkout the repository code
         uses: actions/checkout@v2  # Use the checkout action
-
-      - name: Install dependencies  # Step to install necessary dependencies
-        run: |  # Run command to install dependencies
-          sudo apt-get update  # Update the package list
-          sudo apt-get install -y graphviz  # Install graphviz
 
       - name: Make script executable  # Step to make the script executable
         run: chmod +x ./bin/fastq-peak.sh  # Change permissions to make the script executable
@@ -28,6 +26,7 @@ jobs:  # Define jobs for the workflow
           echo "Processing FASTQ file: ./data/sample.fastq" > expected_output.txt
           echo "Number of reads in ./data/sample.fastq: 2" >> expected_output.txt
           echo "GC content in ./data/sample.fastq: 50%" >> expected_output.txt
+          
           # Capture the actual output of the script and save it to a file
           ./bin/fastq-peak.sh ./data/sample.fastq > actual_output.txt
 
