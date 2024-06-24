@@ -12,8 +12,9 @@ Western Region WFD Offering Provided by the Washington State Department of Healt
   - [Training Objectives](#training-objectives)
   - [Target Audience](#target-audience)
   - [Course Format](#course-format)
-- [Prerequisites for Hands-On Exercises](#prerequisites-for-hands-on-exercises)
 - [Course Content](#course-content)
+- [Prerequisites for Hands-On Exercises](#prerequisites-for-hands-on-exercises)
+
 ## Overview 
 The Washington State Department of Health, in collaboration with Theiagen Genomics, will be hosting an Advanced Bioinformatics Training Workshop throughout July in their role as WFD lead in the Western Region. This will be a virtual workshop hosted on Mondays and Wednesdays via Zoom from **July 8th - 31st, 2024**.
 
@@ -35,6 +36,23 @@ This will be a 4-week training series occurring on Mondays and Wednesdays from J
 
 All lecture content will be recorded and made available through this GitHub repository to facilitate self-paced and asynchronous learning
 
+## Course Content
+
+### Slides & Exercises
+**Week 01: Design Documents & Development Environments**
+- [Lecture Slides]() & [Recording]() -- *Not yet available*
+- [Exercise 01: Design Doc, Dev Environment, and Scripting with VSCode](https://github.com/theiagen/Western-WFD-2024/blob/main/exercises/exercise01.md)
+
+**Week 02: Git Fundamentals and Making Source Code Modifications**
+- [Lecture Slides]() & [Recording]()-- *Not yet available*
+- [Exercise 02: Version Control with Git](https://github.com/theiagen/Western-WFD-2024/blob/main/exercises/exercise02.md)
+
+**Week 03: Bringing Changes into Production**
+- [Lecture Slides]() & [Recording]() -- *Not yet available*
+- [Exercise 03: GitHub Actions & Static Releases](https://github.com/theiagen/Western-WFD-2024/blob/main/exercises/exercise03.md)
+
+
+
 ## Prerequisites for Hands-On Exercises
 In addition to lectures, this course costs of serveral hands-on exercises to reinforce the coursework material. To participate in these exercises, trainees will need the following resources: 
 - GitHub Account
@@ -52,18 +70,18 @@ In addition to lectures, this course costs of serveral hands-on exercises to rei
 </p>
  
 
-
 🚨**NOTE**🚨 Once you're finished working, make sure to shut down your workspace to save your allotted free hours (50hr/month) in GitPod. There are a few ways to stop your workspace from running:
 - In GitPod environment (VSCode interface), click on the orange Gidpod in bottom left corner. Select "Stop Workspace"
 
 <p align="center">
   <img src="./images/stop-workspace.png" width="600" class="center">
 </p>
+
 - Navigate to https://gitpod.io/, find your workspace in the list, click on the three-dot button, and select "Stop" 
+
 <p align="center">
   <img src="./images/stop-workspace2.png" width="800" class="center">
 </p>
 
 
 
-## Course Content

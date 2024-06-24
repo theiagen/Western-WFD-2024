@@ -1,4 +1,4 @@
-# Exercise 1: Design Doc, Dev Environment, and Scripting with VSCode
+# Exercise 01: Design Doc, Dev Environment, and Scripting with VSCode
 
 1. Assess our [Design Doc](https://github.com/theiagen/Western-WFD-2024/blob/main/exercises/design-doc.md) to gain an thorough understanding of our project's **Problem Statement**, **Objectives**, **Proposed Solution**, and **Implementation Plan**.
 
@@ -50,6 +50,6 @@
  <summary> Exercise 1 Solution
  </summary><br />   
 
-A modified fastq-peak.sh code with gc-count calculation and reporting can be found in the [back of the book](https://github.com/theiagen/Western-WFD-2024/blob/main/back-of-the-book/fastq-peak%2Bgc.sh).
+A modified fastq-peak.sh code with gc-count calculation and reporting can be found in the [back of the book](https://github.com/theiagen/Western-WFD-2024/blob/main/back-of-the-book/fastq-peak-gc.sh).
 
 </details>
