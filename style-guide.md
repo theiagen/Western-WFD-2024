@@ -110,6 +110,4 @@ READ_COUNT=$((LINE_COUNT / 4))
 echo "Number of reads in $FASTQ_FILE: $READ_COUNT"
 ```
 
-Following this style guide will help ensure your Bash scripts are easy to read, maintain, and understand by others.
-```
-```
+Following this style guide will help ensure your scripts are easy to read, maintain, and understand by others.
