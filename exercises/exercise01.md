@@ -50,6 +50,6 @@
  <summary> Exercise 1 Solution
  </summary><br />   
 
-A modified fastq-peak.sh code with gc-count calculation and reporting can be found in the [back of the book](https://github.com/theiagen/Western-WFD-2024/blob/main/back-of-the-book/fastq-peak%2Bgc.sh).
+A modified fastq-peak.sh code with gc-count calculation and reporting can be found in the [back of the book](https://github.com/theiagen/Western-WFD-2024/blob/main/back-of-the-book/fastq-peak-gc.sh).
 
 </details>
