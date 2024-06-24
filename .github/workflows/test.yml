@@ -1,6 +1,9 @@
-name: CI  # Name of the workflow
+name: fastq-peak functional test  # Name of the workflow
 
-on: [pull_request]  # Trigger the workflow on pull requests
+on:
+  pull_request:
+    branches:
+      - main  # Trigger the workflow on pull requests to the main branch
 
 jobs:  # Define jobs for the workflow
   build:  # Job name
