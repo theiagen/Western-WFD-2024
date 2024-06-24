@@ -1,4 +1,4 @@
-# Exercise 3: GitHub Actions & Static Releases
+# Exercise 03: GitHub Actions & Static Releases
 ## GitHub Actions
 1. Navigate to the [.github/workflows/test.yml](https://github.com/theiagen/Western-WFD-2024/blob/main/.github/workflows/test.yml) file to understand the automated tests implemented for this repository.
     - Based on this file, consider if the changes we made to add gc-calculation and reporting to fastq-peak.sh would pass this test.
