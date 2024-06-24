@@ -13,11 +13,6 @@ jobs:  # Define jobs for the workflow
       - name: Checkout code  # Step to checkout the repository code
         uses: actions/checkout@v2  # Use the checkout action
 
-      - name: Install dependencies  # Step to install necessary dependencies
-        run: |  # Run command to install dependencies
-          sudo apt-get update  # Update the package list
-          sudo apt-get install -y graphviz  # Install graphviz
-
       - name: Make script executable  # Step to make the script executable
         run: chmod +x ./bin/fastq-peak.sh  # Change permissions to make the script executable
 
