@@ -6,7 +6,7 @@ on:
       - main  # Trigger the workflow on pull requests to the main branch
 
 jobs:  # Define jobs for the workflow
-  build:  # Job name
+  verify-fqp-output:  # Job name
     runs-on: ubuntu-latest  # Specify the environment to run the job
 
     steps:  # Steps to execute in the job
