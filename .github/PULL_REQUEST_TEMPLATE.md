@@ -1,7 +1,7 @@
 ## Description 
 Please include a summary of the changes being made within your PR. Please also include relevant motivation and context.
 
-## Typoe of change
+## Type of change
 Please delete options that are not relevant.
 
 - [ ] Bug fix (non-breaking change which fixes an issue)
