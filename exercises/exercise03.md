@@ -30,6 +30,7 @@ error: failed to push some refs to 'https://github.com/theiagen/Western-WFD-2024
   <img src="../images/e3-4.png" width="1000" class="center">
 </p>
 
+5. Once this PR is merged, as a group, we will make a version release with our new code changes!
 
 <details>
  <summary> Exercise 3 Solution
