@@ -20,7 +20,7 @@
   <img src="../images/e1-3.png" width="800" class="center">
 </p>
 
-4. Assess the [fastq-peak.sh](https://github.com/theiagen/Western-WFD-2024/blob/main/bin/fastq-peak.sh)` software and test it using the [benchmark read data](https://github.com/theiagen/Western-WFD-2024/blob/main/data/sample.fastq)
+4. Assess the [fastq-peak.sh](https://github.com/theiagen/Western-WFD-2024/blob/main/bin/fastq-peak.sh) software and test it using the [benchmark read data](https://github.com/theiagen/Western-WFD-2024/blob/main/data/sample.fastq)
 
 <p align="center">
   <img src="../images/e1-4.png" width="800" class="center">

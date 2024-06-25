@@ -1,5 +1,5 @@
 # Exercise 02: Version Control with Git
-## Creating a dev branch and stagging/committing changes
+## Creating a dev branch and staging/committing changes
 1. Access your dev environment through GitPod:
     -    Navigate to https://gitpod.io/
     - Select "Continue with GitHub", authorize Gitpod to access your GitHub account, and sign in with your credentials

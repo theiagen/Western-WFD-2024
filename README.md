@@ -34,7 +34,7 @@ This will be a 4-week training series occurring on Mondays and Wednesdays from J
 - Mondays (90 min): Lecture material with hands-on exercises
 - Wednesdays (60 min): "Office hours" style meeting where participants can ask any questions about the material, and the trainers will address any errors encountered by participants.
 
-All lecture content will be recorded and made available through this GitHub repository to facilitate self-paced and asynchronous learning
+All lecture content will be recorded and made available through this GitHub repository to facilitate self-paced and asynchronous learning.
 
 ## Course Content
 
@@ -54,10 +54,10 @@ All lecture content will be recorded and made available through this GitHub repo
 
 
 ## Prerequisites for Hands-On Exercises
-In addition to lectures, this course costs of serveral hands-on exercises to reinforce the coursework material. To participate in these exercises, trainees will need the following resources: 
+In addition to lectures, this course consists of serveral hands-on exercises to reinforce the coursework material. To participate in these exercises, trainees will need the following resources: 
 - GitHub Account
   - If you don't already have a GitHub account, please go to github.com and register (it's free!)
-  - Once you have registered ensure you are signed into your account on github.com
+  - Once you have registered, ensure you are signed into your account on github.com
 - GitPod Workspace
   - Navigate to https://gitpod.io/
   - Select "Continue with GitHub", authorize Gitpod to access your GitHub account, and sign in with your credentials
