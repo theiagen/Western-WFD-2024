@@ -1,4 +1,4 @@
-name: fastq-peak functional test  # Name of the workflow
+name: fastq-peek functional test  # Name of the workflow
 
 on:
   pull_request:
@@ -14,11 +14,11 @@ jobs:  # Define jobs for the workflow
         uses: actions/checkout@v2  # Use the checkout action
 
       - name: Make script executable  # Step to make the script executable
-        run: chmod +x ./bin/fastq-peak.sh  # Change permissions to make the script executable
+        run: chmod +x ./bin/fastq-peek.sh  # Change permissions to make the script executable
 
-      - name: Run fastq-peak script  # Step to run the script
+      - name: Run fastq-peek script  # Step to run the script
         id: run_script  # ID for referencing this step
-        run: ./bin/fastq-peak.sh ./data/sample.fastq  # Command to run the script with the sample FASTQ file
+        run: ./bin/fastq-peek.sh ./data/sample.fastq  # Command to run the script with the sample FASTQ file
 
       - name: Verify output  # Step to verify the output
         run: |
@@ -27,7 +27,7 @@ jobs:  # Define jobs for the workflow
           echo "Number of reads in ./data/sample.fastq: 2" >> expected_output.txt
 
           # Capture the actual output of the script and save it to a file
-          ./bin/fastq-peak.sh ./data/sample.fastq > actual_output.txt
+          ./bin/fastq-peek.sh ./data/sample.fastq > actual_output.txt
 
           # Print expected and actual outputs for debugging
           echo "Expected Output:"

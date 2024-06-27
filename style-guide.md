@@ -3,11 +3,15 @@
 This style guide provides best practices and conventions for writing scripts hosted within this repostiroy.
 
 ## 1. Shebang Line
+
 - Always start your script with the shebang line to specify the script's interpreter.
+
   ```bash
   #!/bin/bash
+  ```
 
 ## 2. Comments
+
 - Use comments to explain the purpose of the script, major steps, and any complex logic.
 - Add a comment at the beginning of the script describing its purpose.
 - Use inline comments sparingly to clarify specific lines of code.
@@ -18,6 +22,7 @@ This style guide provides best practices and conventions for writing scripts hos
   ```
 
 ## 3. Variables
+
 - Use uppercase letters for variable names to distinguish them from commands and make them easily recognizable.
 - Use meaningful variable names that convey their purpose.
 
@@ -26,6 +31,7 @@ This style guide provides best practices and conventions for writing scripts hos
   ```
 
 ## 4. Input Validation
+
 - Always validate inputs to ensure the script behaves as expected.
 - Provide clear and user-friendly error messages.
 - Use `exit 1` to terminate the script if validation fails.
@@ -43,6 +49,7 @@ This style guide provides best practices and conventions for writing scripts hos
   ```
 
 ## 5. Output Messages
+
 - Use `echo` to display informative messages to the user.
 - Clearly indicate the progress and results of the script's operations.
 
@@ -51,6 +58,7 @@ This style guide provides best practices and conventions for writing scripts hos
   ```
 
 ## 6. Commands and Calculations
+
 - Use `$(...)` for command substitution instead of backticks for better readability and nesting.
 - Break down complex calculations into smaller, understandable steps with comments.
 
@@ -64,7 +72,9 @@ This style guide provides best practices and conventions for writing scripts hos
   ```
 
 ## 7. Indentation
+
 - Use four spaces for indentation instead of tabs to ensure consistency across different editors and environments.
+
   ```bash
   if [ "$#" -ne 1 ]; then
       echo "Usage: $0 <fastq_file>"
@@ -73,6 +83,7 @@ This style guide provides best practices and conventions for writing scripts hos
   ```
 
 ## 8. Exiting the Script
+
 - Use `exit 0` to explicitly indicate successful completion of the script, although it is not always necessary as Bash implicitly exits with the status of the last executed command.
 
 ## Example Script with Comments

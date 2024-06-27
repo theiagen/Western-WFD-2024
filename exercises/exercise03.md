@@ -1,10 +1,13 @@
 # Exercise 03: GitHub Actions & Static Releases
+
 ## GitHub Actions
+
 1. Navigate to the [.github/workflows/test.yml](https://github.com/theiagen/Western-WFD-2024/blob/main/.github/workflows/test.yml) file to understand the automated tests implemented for this repository.
-    - Based on this file, consider if the changes we made to add gc-calculation and reporting to fastq-peak.sh would pass this test.
+    - Based on this file, consider if the changes we made to add gc-calculation and reporting to fastq-peek.sh would pass this test.
     
 2. Navigate to the pull request made in the [Week 2 Exercise](https://github.com/theiagen/Western-WFD-2024/blob/main/exercises/exercise02.md) and see if these changes pass the automated test defined in [.github/workflows/test.yml](https://github.com/theiagen/Western-WFD-2024/blob/main/.github/workflows/test.yml)
     - If the checks have failed, click "Details" to investigate further.
+
 <p align="center">
   <img src="../images/e3-2.png" width="1000" class="center">
 </p>
@@ -19,13 +22,15 @@ error: failed to push some refs to 'https://github.com/theiagen/Western-WFD-2024
     - **Solution**: Generate a new PAT with the necessary scopes (`repo` and `workflow`).
        - Go to GitHub and generate a new token with `repo` and `workflow` scopes.
        - Update your Git remote URL to use the new token:
+
        ```bash
        git remote set-url origin https://<your-token>@github.com/theiagen/Western-WFD-2024.git
        ```
+
        - Replace `<your-token>` with your new PAT.
 
-
 4. Commit any changes you've made to resolve these issues. If done correctly, you should see that all automated checks now pass:
+
 <p align="center">
   <img src="../images/e3-4.png" width="1000" class="center">
 </p>
@@ -34,7 +39,7 @@ error: failed to push some refs to 'https://github.com/theiagen/Western-WFD-2024
 
 <details>
  <summary> Exercise 3 Solution
- </summary><br />   
+ </summary><br/>
 
 A modified test.yml file to account for gc-count reporting can be found in the [back of the book](https://github.com/theiagen/Western-WFD-2024/blob/main/back-of-the-book/test-gc.yml).
 
