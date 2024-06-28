@@ -58,10 +58,21 @@ In addition to lectures, this course consists of serveral hands-on exercises to 
 - GitHub Account
   - If you don't already have a GitHub account, please go to github.com and register (it's free!)
   - Once you have registered, ensure you are signed into your account on github.com
-- GitPod Workspace
+- GitPod Registration & Configuration
   - Navigate to https://gitpod.io/
   - Select "Continue with GitHub", authorize Gitpod to access your GitHub account, and sign in with your credentials
-  - Start New Workspace
+  - Once registered, navigate to your User Settings to enable write access to public repositories:
+        - User Settings can be accessed by clicking your profile photo in the upper right hand corner
+            - {IMAGE}
+        - From there, select Git Providers
+            - {IMAGE}
+        - Then select the three verticle dots on the right of the GitHub section and select "Edit Permissions"
+            - {IMAGE}
+        - From the Edit Permissions menu, check "public_repo", then click "Update Permissions"
+            - {IMAGE}
+- GitPod Workspace
+  - Navigate to your Workspaces tab and select New Workspace
+      - {IMAGE}
   - Set the repository to https://github.com/theiagen/Western-WFD-2024/
   - Select the default Editor and default Class, click "Continue"
 
