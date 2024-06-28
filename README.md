@@ -54,7 +54,7 @@ All lecture content will be recorded and made available through this GitHub repo
 
 
 ## Prerequisites for Hands-On Exercises
-In addition to lectures, this course consists of serveral hands-on exercises to reinforce the coursework material. To participate in these exercises, trainees will need the following resources: 
+In addition to lectures, this course consists of several hands-on exercises to reinforce the coursework material. To participate in these exercises, trainees will need the following resources: 
 
 ### GitHub Account
 If you don't already have a GitHub account, please go to github.com and register (it's free!)
