@@ -62,13 +62,13 @@ In addition to lectures, this course consists of serveral hands-on exercises to 
   - Navigate to https://gitpod.io/
   - Select "Continue with GitHub", authorize Gitpod to access your GitHub account, and sign in with your credentials
   - Once registered, navigate to your User Settings to enable write access to public repositories:
-        - User Settings can be accessed by clicking your profile photo in the upper right hand corner
+    - User Settings can be accessed by clicking your profile photo in the upper right hand corner
             - {IMAGE}
-        - From there, select Git Providers
+    - From there, select Git Providers
             - {IMAGE}
-        - Then select the three verticle dots on the right of the GitHub section and select "Edit Permissions"
+    - Then select the three verticle dots on the right of the GitHub section and select "Edit Permissions"
             - {IMAGE}
-        - From the Edit Permissions menu, check "public_repo", then click "Update Permissions"
+    - From the Edit Permissions menu, check "public_repo", then click "Update Permissions"
             - {IMAGE}
 - GitPod Workspace
   - Navigate to your Workspaces tab and select New Workspace
