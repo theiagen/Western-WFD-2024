@@ -60,11 +60,11 @@ In addition to lectures, this course consists of several hands-on exercises to r
 If you don't already have a GitHub account, please go to github.com and register (it's free!)
   - Once you have registered, ensure you are signed into your account on github.com
 
-### GitPod Registration 
+### GitPod Account 
 - Navigate to https://gitpod.io/
 - Select "Continue with GitHub", authorize Gitpod to access your GitHub account, and sign in with your credentials
 
-### GitPod Configuration
+### GitPod Configuration for Public Repositories
 Once registered, navigate to your User Settings to enable write access to public repositories:
 - User Settings can be accessed by clicking your profile photo in the upper right hand corner
 
