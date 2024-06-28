@@ -22,12 +22,12 @@ error: failed to push some refs to 'https://github.com/theiagen/Western-WFD-2024
     - **Solution**: Generate a new PAT with the necessary scopes (`repo` and `workflow`).
        - Go to GitHub and generate a new token with `repo` and `workflow` scopes.
        - First, from github.com, click on your profile photo in the upper-right hand corner and clieck Settings from the drop down menu
-       - {IMAGE}
        - From Settings, select "Developer Spaces" on the bottom of the left-hand menu.
-       - {IMAGE}
        - Click the "Personal access token" drop down and select "Tokens (clasic)"
        - Select "Generate new token (classic)" and ensure the "workflow" scope is selected and then click "Generate token" at the bottom of the screen.
-       - {IMAGE}
+<p align="center">
+  <img src="../images/e3_s2.png" width="800" class="center">
+</p>
        - Update your Git remote URL to use the new token:
 
        ```bash
