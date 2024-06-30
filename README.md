@@ -1,9 +1,3 @@
-----
-
-**<p align="center">NOTE: THIS REPO IS IN ACTIVE DEVELOPMENT.</p>**
-
-----
-
 # Software Development Practices for Public Health Bioinformatics
 Western Region WFD Offering Provided by the Washington State Department of Health in Collaboration with Theiagen Genomics
 
