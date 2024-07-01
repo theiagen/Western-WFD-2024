@@ -49,7 +49,7 @@ All lecture content will be recorded and made available through this GitHub repo
 - [Exercise 03: GitHub Actions & Static Releases](https://github.com/theiagen/Western-WFD-2024/blob/main/exercises/exercise03.md)
   
 **Week 04: Advanced Usage of Terra**
-- [Lecture Slides]()
+- [Lecture Slides](https://github.com/theiagen/Western-WFD-2024/blob/main/slides/slides-w4.pdf)
 - [Recording]() -- *Not yet available*
 
 
