@@ -10,10 +10,10 @@ Western Region WFD Offering Provided by the Washington State Department of Healt
 - [Prerequisites for Hands-On Exercises](#prerequisites-for-hands-on-exercises)
 
 ## Overview 
-The Washington State Department of Health, in collaboration with Theiagen Genomics, will be hosting an Advanced Bioinformatics Training Workshop throughout July in their role as WFD lead in the Western Region. This will be a virtual workshop hosted on Mondays and Wednesdays via Zoom from **July 8th - 31st, 2024**.
+The Washington State Department of Health, in collaboration with Theiagen Genomics, will be hosting an Advanced Bioinformatics Training Workshop throughout July in their role as WFD lead in the Western Region. This will be a virtual workshop hosted on Mondays and Wednesdays via Zoom from **July 8th - 31st, 2024**. All training materials will be hosted on this GitHub page to encourage self-paced and asynchronous learning. 
 
 ### Training Objectives
-- Develop a comprehensive understanding of software development processes and documentation
+- Develop a comprehensive understanding of software development processes
 - Gain comfort in the use of development tools and version control systems for effective code management
 - Learn to apply testing and deployment strategies to ensure code quality and stability
 - Explore advanced tools and APIs for data management and workflow automation
