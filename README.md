@@ -35,7 +35,7 @@ All lecture content will be recorded and made available through this GitHub repo
 ### Slides & Exercises
 **Week 00: Training Kick-Off**
 - [Lecture Slides](https://github.com/theiagen/Western-WFD-2024/blob/main/slides/slides-w0.pdf)
-- [Recording]() -- *Not yet available*
+- [Recording](https://youtu.be/xZK8kGNvj2c)
 
 **Week 01: Design Documents & Development Environments**
 - [Lecture Slides](https://github.com/theiagen/Western-WFD-2024/blob/main/slides/slides-w1.pdf)
