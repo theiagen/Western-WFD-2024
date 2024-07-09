@@ -39,7 +39,7 @@ All lecture content will be recorded and made available through this GitHub repo
 
 **Week 01: Design Documents & Development Environments**
 - [Lecture Slides](https://github.com/theiagen/Western-WFD-2024/blob/main/slides/slides-w1.pdf)
-- [Recording]() -- *Not yet available*
+- [Recording](https://youtu.be/1l3JcK840fk)
 - [Exercise 01: Design Doc, Dev Environment, and Scripting with VSCode](https://github.com/theiagen/Western-WFD-2024/blob/main/exercises/exercise01.md)
 
 **Week 02: Git Fundamentals and Making Source Code Modifications**
