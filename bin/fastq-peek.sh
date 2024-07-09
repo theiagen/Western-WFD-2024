@@ -26,3 +26,11 @@ LINE_COUNT=$(wc -l < "$FASTQ_FILE")
 READ_COUNT=$((LINE_COUNT / 4))
 
 echo "Number of reads in $FASTQ_FILE: $READ_COUNT"
+
+# Calculate the percent GC content
+cat ${FASTQ_FILE} \
+     | paste - - - - \
+     | cut -f 2 \
+     | tr -d '\n\r\t ' \
+     | sed -E 's/./&\n/g' \
+     | awk -v fname=${FASTQ_FILE} -v ngc=0 -v tot=0 -v status='ok' '{char=toupper($1)}{if(char != "A" && char != "T" && char != "C" && char != "G" ) {status="not ok"; exit 1} else if (char == "C" || char == "G") {ngc++; tot++} else { tot++ } } END {if (status == "ok") {print "GC content in "fname": "100*ngc/tot"%"} else if (status == "not ok") {print "Error: "fname" contains unexpected characters."} }'
