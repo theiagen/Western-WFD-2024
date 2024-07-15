@@ -24,5 +24,15 @@ echo "Processing FASTQ file: $FASTQ_FILE"
 LINE_COUNT=$(wc -l < "$FASTQ_FILE")
 ## Calculate the number of reads (4 lines per read)
 READ_COUNT=$((LINE_COUNT / 4))
+echo "reads $READ_COUNT"
+##Count A, C, T, and G nucleotides in reads
+TOTAL_BASE_COUNT=$(grep -o "A\|C\|T\|G" $FASTQ_FILE | wc -l)
+echo "total: $TOTAL_BASE_COUNT"
+##Count G and C nucleotides in reads
+GC_COUNT=$(grep -o "G\|C" $FASTQ_FILE | wc -l)
+echo "GC: $GC_COUNT"
+##Calculate GC Content of reads (X100 for % of total nts)
+GC_CONTENT=$(($GC_COUNT*100/$TOTAL_BASE_COUNT))
 
 echo "Number of reads in $FASTQ_FILE: $READ_COUNT"
+echo "GC Content of reads in $FASTQ_FILE: $GC_CONTENT%"
