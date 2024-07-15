@@ -25,4 +25,27 @@ LINE_COUNT=$(wc -l < "$FASTQ_FILE")
 ## Calculate the number of reads (4 lines per read)
 READ_COUNT=$((LINE_COUNT / 4))
 
+#Calculate GC Percentage
+##Count number of GCs
+#{BASH-SCRIPT-TO-COUNT-GC}
+GC_CONTENT=$(python3 - <<HEREDOC
+import sys
+
+def calculate_gc_content(FASTQ_FILE):
+    with open(FASTQ_FILE, 'r') as file:
+        content = file.read()
+    
+    GC_COUNT = sum(1 for base in content if base in 'GCgc')
+    TOTAL_BASE_COUNT = sum(1 for base in content if base in 'ATCGNatcgn')
+    
+    GC_PERCENT = (GC_COUNT / TOTAL_BASE_COUNT * 100) if TOTAL_BASE_COUNT > 0 else 0
+    return GC_PERCENT
+
+FASTQ_FILE = "$FASTQ_FILE"
+GC_PERCENT = calculate_gc_content(FASTQ_FILE)
+print(f"{GC_PERCENT:.2f}")
+HEREDOC
+)
+
 echo "Number of reads in $FASTQ_FILE: $READ_COUNT"
+echo "GC content in $FASTQ_FILE: $GC_CONTENT%"
