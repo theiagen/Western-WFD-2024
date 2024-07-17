@@ -28,7 +28,6 @@ READ_COUNT=$((LINE_COUNT / 4))
 #Calculate GC percentage
 ##Count number of GCs
 echo "dev environment rule"
-
 echo "Number of reads in $FASTQ_FILE: $READ_COUNT"
 
 GC_COUNT=$(awk 'NR % 4 == 2' "$FASTQ_FILE" | tr -cd 'GCgc' | wc -c)
