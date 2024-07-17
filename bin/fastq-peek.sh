@@ -33,6 +33,7 @@ echo "Number of reads in $FASTQ_FILE: $READ_COUNT"
 GC_COUNT=$(awk 'NR % 4 == 2' "$FASTQ_FILE" | tr -cd 'GCgc' | wc -c)
 ##Calculate total bases
 TOTAL_BASE_COUNT=$(awk 'NR % 4 == 2' "$FASTQ_FILE" | tr -cd 'ATCGatcg' | wc -c)
+
 ##Calculate GC percentage
 GC_CONTENT=$(awk "BEGIN {print ($GC_COUNT / $TOTAL_BASE_COUNT) * 100}")
 echo "GC content in $FASTQ_FILE: $GC_CONTENT%"
