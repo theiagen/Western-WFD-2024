@@ -26,18 +26,17 @@ LINE_COUNT=$(wc -l < "$FASTQ_FILE")
 READ_COUNT=$((LINE_COUNT / 4))
 
 #Calculate GC Percentage
-##Count number of GCs
-#{BASH-SCRIPT-TO-COUNT-GC}
 GC_CONTENT=$(python3 - <<HEREDOC
 import sys
 
 def calculate_gc_content(FASTQ_FILE):
     with open(FASTQ_FILE, 'r') as file:
         content = file.read()
-    
+    #count number of G and C
     GC_COUNT = sum(1 for base in content if base in 'GCgc')
+    #count total number of bases
     TOTAL_BASE_COUNT = sum(1 for base in content if base in 'ATCGNatcgn')
-    
+    #calculate GC percentage
     GC_PERCENT = (GC_COUNT / TOTAL_BASE_COUNT * 100) if TOTAL_BASE_COUNT > 0 else 0
     return GC_PERCENT
 
