@@ -25,7 +25,7 @@ LINE_COUNT=$(wc -l < "$FASTQ_FILE")
 ## Calculate the number of reads (4 lines per read)
 READ_COUNT=$((LINE_COUNT / 4))
 
-echo: "Number of reads in $FASTQ_FILE: $READ_COUNT"
+echo "Number of reads in $FASTQ_FILE: $READ_COUNT"
 
 #Calculate GC %
 ##Count Number of GC and assign to "GC_COUNT"
@@ -37,4 +37,4 @@ TOTAL_BASE_COUNT=$(grep -E '^[ATCGN]+$' $FASTQ_FILE | tr -cd 'ATGCatgc' | wc -c)
 ##Calculate % GC out of all nucelotides and assign to "GC PERCENT"
 GC_PERCENT=$(awk "BEGIN {print ($GC_COUNT / $TOTAL_BASE_COUNT) * 100}")
 
-echo 'GC content in $FASTQ_FILE: $GC_CONTENT%'
+echo "GC content in $FASTQ_FILE: $GC_PERCENT%"
