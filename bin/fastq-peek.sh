@@ -35,4 +35,4 @@ GC_COUNT=$(grep -E '^[ATCGN]+$' "$FASTQ_FILE" | tr -cd 'GCgc' | wc -c)
 GC_CONTENT=$(awk "BEGIN {print ($GC_COUNT / $TOTAL_BASE_COUNT) * 100}")
 
 echo "Number of reads in $FASTQ_FILE: $READ_COUNT"
-echo "GC Content in $FASTQ_FILE: $GC_CONTENT%"
+echo "GC content in $FASTQ_FILE: $GC_CONTENT%"
