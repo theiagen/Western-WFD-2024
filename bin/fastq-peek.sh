@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Holly Halstead 
+# Western-WFD-2024 Week 01 Exercise
+
 # Get the directory of the current script
 SCRIPT_DIR=$(dirname "$0")
 
@@ -24,5 +27,14 @@ echo "Processing FASTQ file: $FASTQ_FILE"
 LINE_COUNT=$(wc -l < "$FASTQ_FILE")
 ## Calculate the number of reads (4 lines per read)
 READ_COUNT=$((LINE_COUNT / 4))
+## Count GC in FASTQ file
+GC_COUNT=$(awk '(NR%4==2) {gsub(/[ATnNat]/,"");N+=length($0);}END{print N;}' "$FASTQ_FILE")
+## Count total number of bases in FASTQ file
+TOTAL_BASE_COUNT=$(awk 'NR%4==2 {sum += length($0)} END {print sum}' "$FASTQ_FILE")
+## Calculate GC percent in FASTQ file
+GC_PERCENT=$(awk '(NR%4==2) {N1+=length($0);gsub(/[AT]/,"");N2+=length($0);}END{print N2/N1;}' "$FASTQ_FILE")
 
-echo "Number of reads in $FASTQ_FILE: $READ_COUNT"
+# Print results to terminal
+echo -e "Number of reads in $FASTQ_FILE: $READ_COUNT\nGC Percent in $FASTQ_FILE: $GC_PERCENT"
+
+exit 0
