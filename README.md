@@ -35,16 +35,16 @@ All lecture content will be recorded and made available through this GitHub repo
 ### Slides & Exercises
 **Week 00: Training Kick-Off**
 - [Lecture Slides](https://github.com/theiagen/Western-WFD-2024/blob/main/slides/slides-w0.pdf)
-- [Recording]() -- *Not yet available*
+- [Recording](https://youtu.be/xZK8kGNvj2c)
 
 **Week 01: Design Documents & Development Environments**
 - [Lecture Slides](https://github.com/theiagen/Western-WFD-2024/blob/main/slides/slides-w1.pdf)
-- [Recording]() -- *Not yet available*
+- [Recording](https://youtu.be/1l3JcK840fk)
 - [Exercise 01: Design Doc, Dev Environment, and Scripting with VSCode](https://github.com/theiagen/Western-WFD-2024/blob/main/exercises/exercise01.md)
 
 **Week 02: Git Fundamentals and Making Source Code Modifications**
 - [Lecture Slides](https://github.com/theiagen/Western-WFD-2024/blob/main/slides/slides-w2.pdf)
-- [Recording]() -- *Not yet available*
+- [Recording](https://youtu.be/4yCDCJMF9q8)
 - [Exercise 02: Version Control with Git](https://github.com/theiagen/Western-WFD-2024/blob/main/exercises/exercise02.md)
 
 **Week 03: Bringing Changes into Production**
