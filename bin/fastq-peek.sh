@@ -26,10 +26,10 @@ LINE_COUNT=$(wc -l < "$FASTQ_FILE")
 READ_COUNT=$((LINE_COUNT / 4))
 
 ##Count A, C, T, and G nucleotides in reads
-TOTAL_BASE_COUNT=$(grep -E '^[ACTG]+$' $FASTQ_FILE | wc -c)
+TOTAL_BASE_COUNT=$(grep -E '^[ATCGN]+$' "$FASTQ_FILE" | tr -cd 'ATCGatcg' | wc -c)
 
 ##Count G and C nucleotides in reads
-GC_COUNT=$(grep -E '^[ACTG]+$' $FASTQ_FILE | sed 's/[AT]//g' | wc -c)
+GC_COUNT=$(grep -E '^[ATCGN]+$' "$FASTQ_FILE" | tr -cd 'GCgc' | wc -c)
 
 ##Calculate GC Content of reads (X100 for % of total nts)
 GC_CONTENT=$(awk "BEGIN {print ($GC_COUNT / $TOTAL_BASE_COUNT) * 100}")
