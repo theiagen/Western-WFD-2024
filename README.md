@@ -49,7 +49,7 @@ All lecture content will be recorded and made available through this GitHub repo
 
 **Week 03: Bringing Changes into Production**
 - [Lecture Slides](https://github.com/theiagen/Western-WFD-2024/blob/main/slides/slides-w3.pdf)
-- [Recording]() -- *Not yet available*
+- [Recording](https://youtu.be/tsjsgSy8Jso)
 - [Exercise 03: GitHub Actions & Static Releases](https://github.com/theiagen/Western-WFD-2024/blob/main/exercises/exercise03.md)
   
 **Week 04: Advanced Usage of Terra**
