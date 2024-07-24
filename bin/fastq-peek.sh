@@ -28,10 +28,8 @@ READ_COUNT=$((LINE_COUNT / 4))
 echo "Number of reads in $FASTQ_FILE: $READ_COUNT"
 
 
-echo "extracting sequence lines"
 SEQ_LINES=$(awk '/^@SEQ/ { getline; print }' "$FASTQ_FILE")
 
-echo "calculating GC percent"
 # Count number of bases
 TOTAL_BASE_COUNT=$(echo -n "$SEQ_LINES" | tr -cd 'ATCGatcg' | wc -m)
 # Count GC percent
@@ -40,7 +38,5 @@ GC_COUNT=$(echo -n "$SEQ_LINES" | tr -cd 'GCgc' | wc -m)
 GC_PERCENT=$(awk "BEGIN {print ($GC_COUNT / $TOTAL_BASE_COUNT) * 100}")
 
 #print results
-#echo "Number of bases in $FASTQ_FILE: $TOTAL_BASE_COUNT"
-#echo "GC count in $FASTQ_FILE: $GC_COUNT"
-echo "GC content in $FASTQ_FILE: $GC_PERCENT%"
+echo "GC Content of reads in $FASTQ_FILE: $GC_PERCENT%"
 
