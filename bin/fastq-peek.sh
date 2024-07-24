@@ -24,6 +24,7 @@ echo "Processing FASTQ file: $FASTQ_FILE"
 LINE_COUNT=$(wc -l < "$FASTQ_FILE")
 ## Calculate the number of reads (4 lines per read)
 READ_COUNT=$((LINE_COUNT / 4))
+
 echo "Number of reads in $FASTQ_FILE: $READ_COUNT"
 
 
@@ -42,3 +43,4 @@ GC_PERCENT=$(awk "BEGIN {print ($GC_COUNT / $TOTAL_BASE_COUNT) * 100}")
 #echo "Number of bases in $FASTQ_FILE: $TOTAL_BASE_COUNT"
 #echo "GC count in $FASTQ_FILE: $GC_COUNT"
 echo "GC content in $FASTQ_FILE: $GC_PERCENT%"
+
