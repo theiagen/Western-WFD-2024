@@ -38,7 +38,7 @@ def calculate_gc_content(FASTQ_FILE):
     TOTAL_BASE_COUNT = sum(1 for base in content if base in 'ATCGNatcgn')
     #calculate GC percentage
     GC_PERCENT = (GC_COUNT / TOTAL_BASE_COUNT * 100) if TOTAL_BASE_COUNT > 0 else 0
-    return GC_PERCENT
+    return round(GC_PERCENT)
 
 FASTQ_FILE = "$FASTQ_FILE"
 GC_PERCENT = calculate_gc_content(FASTQ_FILE)
@@ -47,4 +47,4 @@ HEREDOC
 )
 
 echo "Number of reads in $FASTQ_FILE: $READ_COUNT"
-echo "GC content in $FASTQ_FILE: $GC_CONTENT%"
+echo "GC Content of reads in $FASTQ_FILE: $GC_CONTENT%"
