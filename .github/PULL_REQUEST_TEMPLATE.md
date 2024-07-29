@@ -18,4 +18,4 @@ Please describe the tests that you ran to verify your changes. Please also note 
 - [ ] I have performed a self-review of my own code
 - [ ] I have commented my code, particularly in hard-to-understand areas
 - [ ] My changes generate no new warnings
-- [ ] New and existing unit tests pass locally with my changes
+- [ ] New and existing tests pass locally with my changes

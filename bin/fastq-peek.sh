@@ -25,26 +25,16 @@ LINE_COUNT=$(wc -l < "$FASTQ_FILE")
 ## Calculate the number of reads (4 lines per read)
 READ_COUNT=$((LINE_COUNT / 4))
 
-#Calculate GC Percentage
-GC_CONTENT=$(python3 - <<HEREDOC
-import sys
 
-def calculate_gc_content(FASTQ_FILE):
-    with open(FASTQ_FILE, 'r') as file:
-        content = file.read()
-    #count number of G and C
-    GC_COUNT = sum(1 for base in content if base in 'GCgc')
-    #count total number of bases
-    TOTAL_BASE_COUNT = sum(1 for base in content if base in 'ATCGNatcgn')
-    #calculate GC percentage
-    GC_PERCENT = (GC_COUNT / TOTAL_BASE_COUNT * 100) if TOTAL_BASE_COUNT > 0 else 0
-    return round(GC_PERCENT)
+##Count A, C, T, and G nucleotides in reads
+TOTAL_BASE_COUNT=$(grep -o "A\|C\|T\|G" $FASTQ_FILE | wc -l)
 
-FASTQ_FILE = "$FASTQ_FILE"
-GC_PERCENT = calculate_gc_content(FASTQ_FILE)
-print(f"{GC_PERCENT:.2f}")
-HEREDOC
-)
+##Count G and C nucleotides in reads
+GC_COUNT=$(grep -o "G\|C" $FASTQ_FILE | wc -l)
+
+##Calculate GC Content of reads (X100 for % of total nts)
+GC_CONTENT=$(($GC_COUNT*100/$TOTAL_BASE_COUNT))
+
 
 echo "Number of reads in $FASTQ_FILE: $READ_COUNT"
 echo "GC Content of reads in $FASTQ_FILE: $GC_CONTENT%"
